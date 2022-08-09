@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Tour = ({ id, image, info, name, price, removeTour }) => {
-  const [readMore, setReadMore] = useState(false);
+  const [readMore, setReadMore] = useState(true);
   return (
     <article className="single-tour">
       <img src={image} alt={name} />
@@ -13,6 +13,7 @@ const Tour = ({ id, image, info, name, price, removeTour }) => {
         <p>
           {readMore ? info : `${info.substring(0, 200)}...`}
           <button onClick={() => setReadMore(!readMore)}>
+            {/*Sadece readMore değerini değiştirmek istediğimz için başına ! ile belirttik.Değer ne olursa olsun tersi olacak anlamında!  */}
             {readMore ? "show less" : "  read more"}
           </button>
         </p>
