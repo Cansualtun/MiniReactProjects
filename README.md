@@ -12,3 +12,4 @@ Projects in order
 - Reviews
 - Accordion
 - Cocktails
+- Menu
