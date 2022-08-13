@@ -13,3 +13,4 @@ Projects in order
 - Accordion
 - Cocktails
 - Menu
+- Tabs
